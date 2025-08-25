@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/games" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body class="center">
+
+    <div class="loadingScreen">
+        <div class="loader"></div>
+        <p>Loading...</p>
+    </div>
+
+    <div class="page">
+
+        <div class="heading">
+            <h1>Tic Tac Toe</h1>
+        </div>
+
+        <div class="game">
+            <div class="scoreBoard">
+                <div class="score">
+                    <div id="playerO">Player O</div>
+                    <div class="playerOWin">0</div>
+                </div>
+                <div class="score">
+                    <div id="playerX">Player X</div>
+                    <div class="playerXWin">0</div>
+                </div>
+            </div>
+
+            <div class="turn">
+                <p>TURN: </p>
+            </div>
+
+            
+            <div class="gameBoard">
+
+                <div class="round">
+                    <p><i>3 Rounds</i></p>
+                </div>
+
+                <div class="board">
+
+
+                    <div class="box" id="0"></div>
+                    <div class="box" id="1"></div>
+                    <div class="box" id="2"></div>
+                    <div class="box" id="3"></div>
+                    <div class="box" id="4"></div>
+                    <div class="box" id="5"></div>
+                    <div class="box" id="6"></div>
+                    <div class="box" id="7"></div>
+                    <div class="box" id="8"></div>
+    
+                </div>
+
+                <div class="drawBoard">
+                    <p>Match Drawn</p>
+                </div>
+    
+                <div class="winner">
+                    <p class="winnerName"></p>
+                </div>
+                
+            </div>
+
+
+
+            <button class="wrongMove">
+                Invalid Move
+            </button>
+            <div class="caption">
+                <button class="reset">Reset Game</button>
+            </div>
+        </div>
+
+
+        <div class="replay">
+            <div><i>REPLAY</i></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
